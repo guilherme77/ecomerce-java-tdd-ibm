@@ -12,19 +12,16 @@ class PedidoPordutosTest {
 
 	@Test
 	void validarPropriedades() {
-
 		var pedidoProduto = new PedidoProduto();
-		var data = LocalDateTime.now();
 		pedidoProduto.setIdPedido(1);
-		pedidoProduto.setIdProduto(33.33);
-		pedidoProduto.setQuantidade(data);
-		pedidoProduto.setValor(data);
+		pedidoProduto.setIdProduto(1);
+		pedidoProduto.setQuantidade(2);
+		pedidoProduto.setValor(33.33);
 
-	
-
-		assertEquals(1, pedidoProduto.getCliente(());
-		assertEquals(33.33, pedidoProduto.getValorTotal());
-		assertEquals(data, pedidoProduto.getData());
+		assertEquals(1, pedidoProduto.getIdPedido());
+		assertEquals(1, pedidoProduto.getIdProduto());
+		assertEquals(2, pedidoProduto.getQuantidade());
+		assertEquals(33.33, pedidoProduto.getValor());
 
 	}
 

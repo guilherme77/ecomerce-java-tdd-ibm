@@ -12,16 +12,14 @@ class PedidosTests {
 
 	@Test
 	void validarPropriedades() {
+		var data = LocalDateTime.now();
 
 		var pedido = new Pedido();
-		var data = LocalDateTime.now();
-		pedido.setCliente(1);
+		pedido.setIdCliente(1);
 		pedido.setValorTotal(33.33);
-		pedido.setdata(data);
+		pedido.setData(data);
 
-	
-
-		assertEquals(1, pedido.getCliente(());
+		assertEquals(1, pedido.getIdCliente());
 		assertEquals(33.33, pedido.getValorTotal());
 		assertEquals(data, pedido.getData());
 
