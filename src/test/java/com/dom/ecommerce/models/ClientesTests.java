@@ -27,13 +27,13 @@ class ClientesTests {
 		assertEquals("Guilherme", cliente.getNome());
 		assertEquals("guilherme@teste.com", cliente.getEmail());
 		assertEquals("123456", cliente.getSenha());
-		assertEquals("Rua Teste", cliente.getNumero());
-		assertEquals("T7", cliente.getCep());
+		assertEquals("Rua Teste", cliente.getEndereco());
+		assertEquals("T7", cliente.getNumero());
+		assertEquals("0000-000", cliente.getCep());
 		assertEquals("Recife", cliente.getCidade());
 		assertEquals("Boa Vista", cliente.getBairro());
 		assertEquals("PE", cliente.getEstado());
 		assertEquals("Casa 7", cliente.getComplemento());
-
 	}
 
 }
