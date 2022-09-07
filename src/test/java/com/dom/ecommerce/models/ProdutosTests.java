@@ -27,8 +27,13 @@ class ProdutosTests {
 	void geraCodigoAoSetarNome(){
 		var produto = new Produto();
 		produto.setNome("Bicicleta");
-
 		assertEquals("BIC-9", produto.getCodigo());
+	}
 
+	@Test
+	void geraCodigoAoSetarNome2(){
+		var produto = new Produto();
+		produto.setNome("Cachorro vermelho");
+		assertEquals("CAC-17", produto.getCodigo());
 	}
 }
