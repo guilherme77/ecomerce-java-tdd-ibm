@@ -18,7 +18,9 @@ public class Produto {
     }
     public void setNome(String nome) {
         this.nome = nome;
-        this.codigo = this.nome.substring(0, 3).toUpperCase() + "-" + this.nome.length();
+        if(this.codigo == null || this.codigo.isEmpty()){
+            this.codigo = this.nome.substring(0, 3).toUpperCase() + "-" + this.nome.length();
+        }
     }
     public String getDescricao() {
         return descricao;

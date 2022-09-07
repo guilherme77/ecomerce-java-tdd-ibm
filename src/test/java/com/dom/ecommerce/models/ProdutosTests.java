@@ -36,4 +36,19 @@ class ProdutosTests {
 		produto.setNome("Cachorro vermelho");
 		assertEquals("CAC-17", produto.getCodigo());
 	}
+
+	@Test
+	void geraCodigoAoSetarNome3(){
+		var produto = new Produto();
+		produto.setNome("Banana Nanica");
+		assertEquals("BAN-13", produto.getCodigo());
+	}
+
+	@Test
+	void casoDigeteoCodigoDepoisAltereNomeOCodigoficaOMesmo(){
+		var produto = new Produto();
+		produto.setCodigo("TTT-21");
+		produto.setNome("Banana Nanica");
+		assertEquals("TTT-21", produto.getCodigo());
+	}
 }
