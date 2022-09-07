@@ -23,4 +23,12 @@ class ProdutosTests {
 		assertEquals(100, produto.getQuantidade());
 	}
 
+	@Test
+	void geraCodigoAoSetarNome(){
+		var produto = new Produto();
+		produto.setNome("Bicicleta");
+
+		assertEquals("BIC-9", produto.getCodigo());
+
+	}
 }
